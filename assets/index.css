@@ -1,0 +1,333 @@
+body{
+	background-color: rgb(227, 227, 227);
+	margin: auto;
+  padding-top: 4%;
+}
+
+.headerP{
+	background-color: rgb(186, 148, 85);
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    box-shadow: 2px 2px 5px rgb(22, 18, 10);
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -1%;
+}
+img.ImagenIni{
+	vertical-align: middle;
+	display: inline-block;
+  margin: 0.5%;
+  margin-left: 2%;
+}
+
+h1{
+	display: inline-block;
+	text-align: center;
+	color: white;
+	vertical-align: bottom;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+  text-shadow: black 2px 3px 5px;
+  margin: 5px;
+}
+
+.texto2{
+  font-size: 20px;
+}
+
+nav{
+  float: right;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.img{
+    margin-right: 15px;
+}
+
+
+.menu{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.menu1_1{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.titulo1{
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 6%;
+    color: white;
+}
+
+.titulo2{
+	text-align: right;
+	font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 6%;
+  color: white;
+}
+
+.enlace{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.enlace:hover{
+  font-size: 22px;
+}
+
+.footerP{
+    width: 100%;
+    background-color: black;
+}
+
+.foot{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#login-content {
+  position: fixed;
+  top: 10%;
+  right: 3%;
+  z-index: 999;    
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px 0 10px 10px;
+  width: 270px; 
+  display: none;
+  box-shadow: 2px 2px 10px #666;
+}
+
+input#user, input#pass {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin-bottom: 10px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#submit {    
+  background-color: rgb(186, 148, 85);
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+  border: 1px solid rgb(145, 114, 66);
+  float: left;
+  height: 28px;
+  padding: 0;
+  width: 100px;
+  cursor: pointer;
+  font: bold 14px Arial;
+  color: #fff;
+}
+#submit:hover {    
+  background-color: rgb(145, 114, 66);
+} 
+
+.registro{
+  cursor: pointer;
+
+}
+
+.registro:hover{
+  font-size: 16px;
+}
+
+label {
+  float: right;
+  line-height: 28px;
+  font-size: 14px;
+  color: #666;
+}
+
+#registro{
+  cursor: pointer;
+}
+
+*,*:after, *:before{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contenedor_carga{
+  background-color:  rgba(233,252,253, 0.9);
+  height: 100%;
+  width:100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition:  all 1s ease;
+  z-index: 100000;
+
+}
+#carga{
+  border: 15px solid #ccc;
+  border-top-color: #2E26F4;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation:  girar 1.5s linear infinite;
+
+}
+
+@keyframes girar{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+  
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px #2E26F4;
+  border-radius: 10px;
+  z-index: 10000000;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  height: 800px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  height: 90%;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #2E26F4;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.im {
+  width: 60%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.im:hover{
+  width: 60.2%;
+  height: 100.2%;
+}
+
+.circulo {
+  background: -webkit-radial-gradient(rgb(180, 180, 180), rgb(80, 80, 80));
+  background: -moz-radial-gradient(rgb(180, 180, 180), rgb(80, 80, 80));
+}
+
+#imgTequila{
+  margin: 5%;
+}
+
+.derecha {
+  background-color: teal;
+}
+
+#terminos {
+  color: white;
+  float: none;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+#terminos:hover{
+  cursor: pointer;
+}
+
+.mns{
+  text-align: right;
+}
+
+.titulo3{
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 6%;
+}
